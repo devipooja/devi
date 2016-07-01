@@ -1,6 +1,6 @@
 var express= require('express');
 var app= express();
-var PORT= 2000;
+var PORT= process.env.port || 2000;
 
 var middleware = require('./middleware.js');
 
